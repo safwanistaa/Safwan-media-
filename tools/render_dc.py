@@ -22,7 +22,11 @@ with sync_playwright() as p:
     browser = p.chromium.launch(executable_path="/usr/bin/google-chrome", args=["--no-sandbox"])
     page = browser.new_page(viewport={"width": 1080, "height": 1350})
     for i, name in enumerate(names, 1):
-        page.set_content(to_html((src_dir / name).read_text(encoding="utf-8")))
+        # Write next to the source so relative image paths (e.g. photo.jpg) resolve.
+        tmp = src_dir / f"_render_{i:02d}.html"
+        tmp.write_text(to_html((src_dir / name).read_text(encoding="utf-8")), encoding="utf-8")
+        page.goto(tmp.resolve().as_uri())
+        tmp.unlink()
         page.evaluate("document.fonts.ready")
         page.wait_for_timeout(300)
         page.screenshot(path=str(out_dir / f"slide{i:02d}.jpg"), type="jpeg", quality=92)
