@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weather slide 2 — Forecast</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+.ar{font-family:'IBM Plex Sans Arabic',sans-serif;direction:rtl;text-align:right}
+</style>
+</helmet>
+<div style="position:relative;width:1080px;height:1350px;box-sizing:border-box;padding:64px 72px;overflow:hidden;font-family:Inter,sans-serif;color:#fff;background:linear-gradient(170deg,#1B2B44 0%,#33496B 48%,#6F87A6 100%);display:flex;flex-direction:column">
+<div style="position:absolute;inset:0;background:repeating-linear-gradient(105deg,rgba(255,255,255,0) 0 46px,rgba(255,255,255,.05) 46px 48px);pointer-events:none"></div>
+<div style="position:relative;display:flex;justify-content:space-between;align-items:center;font-size:24px;font-weight:600;color:rgba(255,255,255,.85)">
+<span style="display:flex;align-items:center;gap:12px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Dubai · UAE</span>
+<span style="padding:8px 18px;border-radius:99px;background:rgba(255,255,255,.15)">02 / 07</span>
+</div>
+<div style="position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;gap:30px;padding:24px 0">
+
+<div style="font-size:26px;font-weight:600;letter-spacing:.16em;color:#9FD3FF">4-DAY FORECAST · NCM</div>
+<div style="font-size:76px;font-weight:800;line-height:1.05;letter-spacing:-.02em">4 days of possible rain. In the UAE. No cap.</div>
+<div style="display:flex;gap:18px"><div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;padding:26px 0;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.22);border-radius:36px;"><span style="font-size:28px;font-weight:700">WED</span><svg aria-hidden="true" width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 40h28a10 10 0 0 0 0-20 14 14 0 0 0-27-2A10 10 0 0 0 18 40z" fill="rgba(255,255,255,.18)"/><path d="M22 48l-3 7M33 48l-3 7M44 48l-3 7" stroke="#9FD3FF"/></svg><span style="font-size:22px;color:rgba(255,255,255,.8)">Light rain</span></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;padding:26px 0;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.22);border-radius:36px;"><span style="font-size:28px;font-weight:700">THU</span><svg aria-hidden="true" width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 40h28a10 10 0 0 0 0-20 14 14 0 0 0-27-2A10 10 0 0 0 18 40z" fill="rgba(255,255,255,.18)"/><path d="M22 48l-3 7M33 48l-3 7M44 48l-3 7" stroke="#9FD3FF"/></svg><span style="font-size:22px;color:rgba(255,255,255,.8)">Light rain</span></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;padding:26px 0;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.22);border-radius:36px;"><span style="font-size:28px;font-weight:700">FRI</span><svg aria-hidden="true" width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 40h28a10 10 0 0 0 0-20 14 14 0 0 0-27-2A10 10 0 0 0 18 40z" fill="rgba(255,255,255,.18)"/><path d="M22 48l-3 7M33 48l-3 7M44 48l-3 7" stroke="#9FD3FF"/></svg><span style="font-size:22px;color:rgba(255,255,255,.8)">Light rain</span></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;padding:26px 0;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.22);border-radius:36px;"><span style="font-size:28px;font-weight:700">SAT</span><svg aria-hidden="true" width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 40h28a10 10 0 0 0 0-20 14 14 0 0 0-27-2A10 10 0 0 0 18 40z" fill="rgba(255,255,255,.18)"/><path d="M22 48l-3 7M33 48l-3 7M44 48l-3 7" stroke="#9FD3FF"/></svg><span style="font-size:22px;color:rgba(255,255,255,.8)">Light rain</span></div></div>
+<div style="display:flex;gap:18px">
+<div style="flex:1;padding:28px 30px;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.22);border-radius:36px;"><div style="display:flex;align-items:center;gap:12px;font-size:24px;color:rgba(255,255,255,.75)"><svg aria-hidden="true" width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M26 38V12a6 6 0 0 1 12 0v26a11 11 0 1 1-12 0z"/><circle cx="32" cy="46" r="5" fill="#9FD3FF" stroke="none"/><path d="M32 46V22" stroke="#9FD3FF"/></svg>Inland lows</div><div style="font-size:72px;font-weight:300;margin-top:6px">13–19°</div></div>
+<div style="flex:1;padding:28px 30px;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.22);border-radius:36px;"><div style="display:flex;align-items:center;gap:12px;font-size:24px;color:rgba(255,255,255,.75)"><svg aria-hidden="true" width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M26 38V12a6 6 0 0 1 12 0v26a11 11 0 1 1-12 0z"/><circle cx="32" cy="46" r="5" fill="#9FD3FF" stroke="none"/><path d="M32 46V22" stroke="#9FD3FF"/></svg>Mountain lows</div><div style="font-size:72px;font-weight:300;margin-top:6px">10–17°</div></div>
+</div>
+<div lang="ar" dir="rtl" class="ar" style="font-size:42px;font-weight:600;line-height:1.5;color:#fff;">مطرة خفيفة من الأربعاء لحدي السبت، والصغرى ١٣ لـ ١٩ درجة. يعني عندنا دا زمهرير</div>
+
+</div>
+<div style="position:relative;display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1.5px solid rgba(255,255,255,.2);font-size:24px;font-weight:600">
+<span>@safwanistaa</span><span style="display:flex;align-items:center;gap:10px;font-size:24px;font-weight:600">Swipe <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

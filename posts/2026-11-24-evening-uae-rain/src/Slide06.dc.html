@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weather slide 6 — Poll</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+.ar{font-family:'IBM Plex Sans Arabic',sans-serif;direction:rtl;text-align:right}
+</style>
+</helmet>
+<div style="position:relative;width:1080px;height:1350px;box-sizing:border-box;padding:64px 72px;overflow:hidden;font-family:Inter,sans-serif;color:#fff;background:linear-gradient(170deg,#1B2B44 0%,#33496B 48%,#6F87A6 100%);display:flex;flex-direction:column">
+<div style="position:absolute;inset:0;background:repeating-linear-gradient(105deg,rgba(255,255,255,0) 0 46px,rgba(255,255,255,.05) 46px 48px);pointer-events:none"></div>
+<div style="position:relative;display:flex;justify-content:space-between;align-items:center;font-size:24px;font-weight:600;color:rgba(255,255,255,.85)">
+<span style="display:flex;align-items:center;gap:12px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Dubai · UAE</span>
+<span style="padding:8px 18px;border-radius:99px;background:rgba(255,255,255,.15)">06 / 07</span>
+</div>
+<div style="position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;gap:30px;padding:24px 0">
+
+<div style="font-size:26px;font-weight:600;letter-spacing:.16em;color:#9FD3FF">QUICK POLL</div>
+<div style="font-size:80px;font-weight:800;line-height:1.05;letter-spacing:-.02em">Which one are you this week?</div>
+<div lang="ar" dir="rtl" class="ar" style="font-size:48px;font-weight:700;line-height:1.5;color:#fff;">إنت ياتو واحد فيهم الأسبوع دا؟</div>
+<div style="display:flex;flex-direction:column;gap:16px"><div style="display:flex;align-items:center;gap:26px;padding:26px 32px;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.22);border-radius:36px;"><span style="width:76px;height:76px;flex:none;border-radius:50%;background:#9FD3FF;color:#1B2B44;font-size:38px;font-weight:800;display:flex;align-items:center;justify-content:center">A</span><div style="flex:1"><div style="font-size:36px;font-weight:700">Already in a jacket at 24°</div><div lang="ar" dir="rtl" class="ar" style="font-size:34px;font-weight:500;line-height:1.5;color:rgba(255,255,255,.85);">لابس جاكيت من ٢٤ درجة</div></div></div><div style="display:flex;align-items:center;gap:26px;padding:26px 32px;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.22);border-radius:36px;"><span style="width:76px;height:76px;flex:none;border-radius:50%;background:#9FD3FF;color:#1B2B44;font-size:38px;font-weight:800;display:flex;align-items:center;justify-content:center">B</span><div style="flex:1"><div style="font-size:36px;font-weight:700">Waiting for 10° to take it serious</div><div lang="ar" dir="rtl" class="ar" style="font-size:34px;font-weight:500;line-height:1.5;color:rgba(255,255,255,.85);">مستني العشرة درجات</div></div></div><div style="display:flex;align-items:center;gap:26px;padding:26px 32px;background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.22);border-radius:36px;"><span style="width:76px;height:76px;flex:none;border-radius:50%;background:#9FD3FF;color:#1B2B44;font-size:38px;font-weight:800;display:flex;align-items:center;justify-content:center">C</span><div style="flex:1"><div style="font-size:36px;font-weight:700">Still in slippers. Built different.</div><div lang="ar" dir="rtl" class="ar" style="font-size:34px;font-weight:500;line-height:1.5;color:rgba(255,255,255,.85);">لسه بالسفنجة. زول قوي</div></div></div></div>
+<div style="font-size:30px;font-weight:500;color:rgba(255,255,255,.85)">Drop your letter in the comments.</div>
+
+</div>
+<div style="position:relative;display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1.5px solid rgba(255,255,255,.2);font-size:24px;font-weight:600">
+<span>@safwanistaa</span><span style="display:flex;align-items:center;gap:10px;font-size:24px;font-weight:600">Swipe <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

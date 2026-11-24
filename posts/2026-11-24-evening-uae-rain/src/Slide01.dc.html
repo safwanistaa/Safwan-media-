@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weather slide 1 — Hook</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+.ar{font-family:'IBM Plex Sans Arabic',sans-serif;direction:rtl;text-align:right}
+</style>
+</helmet>
+<div style="position:relative;width:1080px;height:1350px;box-sizing:border-box;padding:64px 72px;overflow:hidden;font-family:Inter,sans-serif;color:#fff;background:linear-gradient(170deg,#1B2B44 0%,#33496B 48%,#6F87A6 100%);display:flex;flex-direction:column">
+<div style="position:absolute;inset:0;background:repeating-linear-gradient(105deg,rgba(255,255,255,0) 0 46px,rgba(255,255,255,.05) 46px 48px);pointer-events:none"></div>
+<div style="position:relative;display:flex;justify-content:space-between;align-items:center;font-size:24px;font-weight:600;color:rgba(255,255,255,.85)">
+<span style="display:flex;align-items:center;gap:12px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Dubai · UAE</span>
+<span style="padding:8px 18px;border-radius:99px;background:rgba(255,255,255,.15)">01 / 07</span>
+</div>
+<div style="position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;gap:30px;padding:24px 0">
+
+<div style="display:flex;gap:44px;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;justify-content:space-between">
+<div>
+<div style="font-size:26px;font-weight:600;letter-spacing:.16em;color:#9FD3FF">WEATHER UPDATE</div>
+<div style="font-size:250px;font-weight:200;line-height:1;letter-spacing:-.04em;margin-top:10px">19°</div>
+<div style="font-size:34px;font-weight:500;color:rgba(255,255,255,.85)">Rain possible from Wednesday</div>
+</div>
+<div style="font-size:30px;font-weight:600;line-height:1.3">Feels like: <span style="color:#9FD3FF">Siberia</span><br><span style="font-weight:400;color:rgba(255,255,255,.75)">(to anyone living in the UAE)</span></div>
+</div>
+<div style="width:420px;height:540px;border-radius:40px;overflow:hidden;border:2px solid rgba(255,255,255,.3);position:relative">
+<img src="photo.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 20%">
+<div style="position:absolute;left:16px;right:16px;bottom:16px;padding:14px 18px;border-radius:20px;background:rgba(27,43,68,.82);font-size:22px;font-weight:600;line-height:1.3">me refreshing the forecast every 5 min</div>
+</div>
+</div>
+<div style="font-size:84px;font-weight:800;line-height:1.02;letter-spacing:-.02em">UAE winter is here.<br>The jackets are out.</div>
+<div lang="ar" dir="rtl" class="ar" style="font-size:56px;font-weight:700;line-height:1.5;color:#fff;">الشتا وصل… والجاكيت طلع من الدولاب</div>
+
+</div>
+<div style="position:relative;display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1.5px solid rgba(255,255,255,.2);font-size:24px;font-weight:600">
+<span>@safwanistaa</span><span style="display:flex;align-items:center;gap:10px;font-size:24px;font-weight:600">Swipe <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
