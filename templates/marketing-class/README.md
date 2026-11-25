@@ -1,6 +1,6 @@
 # Marketing Class — daily educational series (approved by Safwan 25 Nov 2026)
 
-One educational carousel per day, posted at 17:41 Dubai time, separate from the 3 fun posts.
+One educational carousel per day, posted at 17:11 Dubai time, separate from the 3 fun posts.
 
 ## Fixed series look (do not change)
 - **Cover (slide 1) is identical every lesson**: solid maroon #6B1E2E, cream "MARKETING CLASS" badge top-left, gold "LESSON" + huge gold lesson number (Playfair Display), outlined tag (platform/category), italic Playfair topic name, Arabic topic, one-line hook EN + Sudanese AR, photo **02-arms-crossed.jpg** in a gold-outlined arch bottom-right, cream footer strip "@safwanistaa · a new lesson every day · Swipe". Only the `COVER` fields change.
