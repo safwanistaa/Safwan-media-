@@ -2,7 +2,7 @@
 
 date | lesson | topic | slides | media_id
 
-- 2026-11-25 | 01 | Retargeting on Meta Ads (4 audiences, hot/warm/cool recency, message map, 4 mistakes, checklist) | 8 | 18379334191212573
+- 2026-11-25 | 01 | Retargeting on Meta Ads (4 audiences, hot/warm/cool recency, message map, 4 mistakes, checklist) | 9 (v2 with real-life example; replaces 8-slide 18379334191212573, to be deleted manually) | 18132296041880670
 
 ## Topic backlog (pick freely, mix platforms/skills, adjust to what's trending)
 - Meta ads: Advantage+ vs manual, creative testing, lookalike audiences, campaign structure for small budgets
