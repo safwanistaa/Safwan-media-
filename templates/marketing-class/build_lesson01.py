@@ -6,7 +6,7 @@ Do NOT change page(), cover(), the palette, fonts or the last-slide CTA structur
 import sys
 from pathlib import Path
 OUT = Path(sys.argv[1]); OUT.mkdir(parents=True, exist_ok=True)
-N = 8
+N = 9
 CREAM = "#F6F1E7"; PAPER = "#FBF8F2"; MAROON = "#6B1E2E"; GOLD = "#8C6420"; INK = "#1E1A17"; MUTED = "#6A6158"; RULE = "#DDD2C0"
 AR = "font-family:'IBM Plex Sans Arabic',sans-serif;"
 SERIF = "font-family:'Playfair Display',serif;font-variant-numeric:lining-nums;"
@@ -87,6 +87,28 @@ s2 = f'''
 '''
 page(2, "WHAT IT IS", s2)
 
+# 3 REAL-LIFE EXAMPLE (series rule: every concept gets a relatable real-life example)
+phone = f"""<div style="width:400px;flex:none;background:#fff;border:3px solid {INK};border-radius:44px;padding:22px 18px 26px;box-sizing:border-box;box-shadow:12px 12px 0 {RULE}">
+<div style="display:flex;align-items:center;gap:12px;padding:4px 6px 14px"><span style="width:46px;height:46px;border-radius:50%;background:{GOLD}"></span><div style="display:flex;flex-direction:column"><span style="font-size:22px;font-weight:800">sneaker.store</span><span style="font-size:18px;color:{MUTED}">Sponsored</span></div></div>
+<div style="height:250px;border-radius:18px;background:#EFE6D6;display:flex;align-items:center;justify-content:center"><svg width="230" height="120" viewBox="0 0 230 120" fill="none"><path d="M14 92c0-22 8-40 22-52 10 14 30 22 52 22 26 0 46-8 60-4 22 6 44 18 64 30 8 5 6 18-4 18H24c-6 0-10-6-10-14z" fill="{MAROON}"/><path d="M14 98h204v8c0 6-4 10-10 10H24c-6 0-10-4-10-10z" fill="{INK}"/><path d="M60 64l14 10M80 60l14 12M100 58l14 12" stroke="{CREAM}" stroke-width="5" stroke-linecap="round"/></svg></div>
+<div style="padding:16px 6px 0;font-size:24px;font-weight:700;line-height:1.3">Still thinking about these? Free delivery today only.</div>
+<div style="margin:16px 6px 0;background:{MAROON};color:{CREAM};text-align:center;border-radius:12px;padding:14px;font-size:22px;font-weight:800">Complete your order</div>
+</div>"""
+def step(day, en, a):
+    return f'<div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:800;font-size:22px;letter-spacing:0.16em;color:{GOLD}">{day}</span><span style="font-size:31px;font-weight:600;line-height:1.3">{en}</span>{ar(a, 27, 600, MUTED)}</div>'
+s3x = f"""
+{h("You've already been retargeted. <i style='color:" + MAROON + "'>Many times.</i>", 64)}
+<div style="display:flex;gap:40px;align-items:center">
+{phone}
+<div style="flex:1;display:flex;flex-direction:column;gap:26px">
+{step("MONDAY, 1 AM", "You check out sneakers on a store's website, add them to cart… then close the tab.", "شفت جزمة في موقع، ضفتها للسلة وقفلت")}
+{step("TUESDAY", "You open Instagram and there they are. Same sneakers. “Still thinking about these?”", "فتحت إنستقرام… لقيتها قدامك تاني")}
+</div>
+</div>
+<div style="background:{MAROON};color:{CREAM};border-radius:22px;padding:26px 32px;font-size:30px;font-weight:600;line-height:1.4"><b>The business side:</b> an online perfume shop gets 1,000 visitors this week and only 20 buy. Retargeting reminds the other 980, who already know the shop.</div>
+"""
+page(3, "REAL-LIFE EXAMPLE", s3x)
+
 # 3 audiences
 def aud(n, title, sub, a):
     return f'''<div style="display:flex;gap:26px;align-items:flex-start;background:{PAPER};border:2px solid {RULE};border-radius:22px;padding:26px 30px">{num(n)}
@@ -100,7 +122,7 @@ s3 = f'''
 {aud(4, "Added to cart, didn't buy", "Your hottest audience. Don't ignore them", "ضافوا للسلة وما اشتروا")}
 </div>
 '''
-page(3, "STEP 1 · AUDIENCES", s3)
+page(4, "STEP 1 · AUDIENCES", s3)
 
 # 4 recency
 def heat(label, days, msg, a, w, col):
@@ -117,7 +139,7 @@ s4 = f'''
 </div>
 {ar("ما تعرض نفس الإعلان لزول زارك أمس وزول زارك قبل شهرين.", 36, 700, MAROON)}
 '''
-page(4, "STEP 2 · RECENCY", s4)
+page(5, "STEP 2 · RECENCY", s4)
 
 # 5 message map
 rows = [("Watched your video", "Show the next video or a case study"), ("Viewed a product", "Show that exact product + a review"), ("Added to cart", "Reminder + a real reason to finish (free delivery, bonus)"), ("Already bought", "Exclude them, or upsell later")]
@@ -130,7 +152,7 @@ s5 = f'''
 <div style="display:flex;flex-direction:column;border-bottom:2px solid {RULE}">{tbl}</div>
 {ar("الإعلان لازم يكمل القصة من المكان الوقف فيهو العميل.", 36, 700, MAROON)}
 '''
-page(5, "STEP 3 · MESSAGE", s5)
+page(6, "STEP 3 · MESSAGE", s5)
 
 # 6 mistakes
 def mis(t, fix):
@@ -146,7 +168,7 @@ s6 = f'''
 </div>
 {ar("أكبر غلطة: تصرف قروش على زول اشترى خلاص.", 36, 700, MAROON)}
 '''
-page(6, "AVOID THIS", s6)
+page(7, "AVOID THIS", s6)
 
 # 7 checklist
 def ck(t):
@@ -164,7 +186,7 @@ s7 = f'''
 </div>
 {ar("اعمل سكرينشوت وابدأ الليلة.", 40, 700, MAROON)}
 '''
-page(7, "SCREENSHOT THIS", s7)
+page(8, "SCREENSHOT THIS", s7)
 
 # 8 CTA
 s8 = f'''
@@ -179,7 +201,7 @@ s8 = f'''
 <span lang="ar" dir="rtl" style="{AR}font-size:34px;font-weight:600;text-align:right">الدرس الجاي يكون عن شنو؟ كلمني في الكومنتات</span>
 </div>
 '''
-page(8, "NEW LESSON EVERY DAY", s8, last=True)
+page(9, "NEW LESSON EVERY DAY", s8, last=True)
 print("ok")
 
 # ---- UNIFIED SERIES COVER (same layout every lesson; only the fields below change)
