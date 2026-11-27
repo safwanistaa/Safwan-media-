@@ -14,3 +14,4 @@ One line per story shared ~6h after a grid post: date | slot of the grid post | 
 - 2026-11-27 | 2026-11-26 evening | 2026-11-26-evening-winter-break | grid 17908165089351772 | story 18135159757763880
 - 2026-11-27 | 2026-11-27 morning | 2026-11-27-morning-calorie-menu | grid 17981800158156142 | story 17937747687147072
 - 2026-11-27 | 2026-11-27 afternoon | 2026-11-27-afternoon-dubai-7s | grid 17900495421412714 | story 18122827027945585
+- 2026-11-28 | recap | 2026-11-27 | 2026-11-27-morning-calorie-menu, 2026-11-27-afternoon-dubai-7s, 2026-11-27-lesson-03-irresistible-offer, 2026-11-27-evening-celebrate-safely | grid 17981800158156142, 17900495421412714, 17979377345939317, 18349316104287366 | story 18121921601096362
