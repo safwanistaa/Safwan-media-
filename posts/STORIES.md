@@ -12,3 +12,4 @@ One line per story shared ~6h after a grid post: date | slot of the grid post | 
 - 2026-11-27 | 2026-11-26 afternoon | 2026-11-26-afternoon-eid-etihad-route-v2 | grid 17997799059104650 | story 18205469581377645
 - 2026-11-27 | 2026-11-26 lesson | 2026-11-26-lesson-02-hooks | grid 18287173345295290 | story 18042074951897334
 - 2026-11-27 | 2026-11-26 evening | 2026-11-26-evening-winter-break | grid 17908165089351772 | story 18135159757763880
+- 2026-11-27 | 2026-11-27 morning | 2026-11-27-morning-calorie-menu | grid 17981800158156142 | story 17937747687147072
